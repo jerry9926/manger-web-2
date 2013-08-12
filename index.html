@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demo</title>
+	<link rel="stylesheet" href="css/ui/default/easyui.css">
+	<link rel="stylesheet" href="css/ui/icon.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/jquery-1.6.min.js"></script>
+	<script src="js/jquery.easyui.min.js"></script>
+	<script src="js/manage.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="sideBar" >
+			<p class="title">七彩坊运营后台</p>
+			<ul class="sideList" id="sideList">
+				<li><a href="javascript:void(0);" id="postSide">帖子审核</a></li>
+				<li><a href="javascript:void(0);" id="replySide">回复审核</a></li>
+				<li><a href="javascript:void(0);" id="recycleSide">帖子回收站</a></li>
+				<li><a href="javascript:void(0);" id="backSide">黑名单</a></li>
+			</ul>
+		</div>
+		<div class="contentBox" id="contentBox" >
+			<p class="title">当前位置</p>
+			<div class="postBox page" id="postBox">
+				<ul class="postSearch">
+					<li>
+						日期：<input id="datepickerFrom-post" type="text" />
+						至<input id="datepickerTo-post" type="text" />  
+					</li>
+					<li>
+						<label for="userNameText-post">按用户昵称：</label>
+						<input type="text" id="userNameText-post" />
+						<a href="javascript:void(0);" id="userNameBtn-post"></a>
+						<label for="keywordText-post">按关键字：</label>
+						<input type="text" id="keywordText-post"/>
+						<a href="javascript:void(0);" id="keywordBtn-post"></a>
+					</li>
+					<li>
+						<label for="postTypeText-post">按帖子分类：</label>
+						<select id="postTypeSelect-post" style="width:200px;">
+							<option value="0">test-1</option>
+							<option value="1">test-2</option>
+							<option value="2">test-3</option>
+						</select>
+						<a href="javascript:void(0);" id="postTypeBtn-post"></a>
+					</li>
+				</ul>
+				<table id="postList" ></table>
+			</div>
+			
+			<div class="replyBox page hidden" id="replyBox">
+				<ul class="replySearch">
+					<li>
+						日期：<input id="datepickerFrom-reply" type="text" />
+						至<input id="datepickerTo-reply" type="text" />  
+					</li>
+					<li>
+						<label for="userNameText-reply">按用户昵称：</label>
+						<input type="text" id="userNameText-reply" />
+						<a href="javascript:void(0);" id="userNameBtn-reply"></a>
+						<label for="keywordText-reply">按关键字：</label>
+						<input type="text" id="keywordText-reply"/>
+						<a href="javascript:void(0);" id="keywordBtn-reply"></a>
+					</li>
+					<li>
+						<label for="postTypeText-reply">按帖子分类：</label>
+						<select id="postTypeSelect-reply" style="width:200px;">
+							<option value="0">test-1</option>
+							<option value="1">test-2</option>
+							<option value="2">test-3</option>
+						</select>
+						<a href="javascript:void(0);" id="postTypeBtn-reply"></a>
+					</li>
+				</ul>
+				<table id="replyList" ></table>
+			</div>
+
+			<div class="recycleBox page hidden" id="recycleBox">
+				回收站
+			</div>
+
+			<div class="backBox page" id="backBox">
+				<table id="backList"></table>
+			</div>
+			
+		</div>  		
+	</div>
+
+</body>
+</html>
