@@ -1,0 +1,25 @@
+{
+  "name": "manger-web-2",
+  "version": "0.0.0",
+  "description": "manger-web",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jerry9926/manger-web-2.git"
+  },
+  "author": "kuler",
+  "license": "BSD",
+  "gitHead": "afeef468bc5691a2728a2b859785969372c353ac",
+  "bugs": {
+    "url": "https://github.com/jerry9926/manger-web-2/issues"
+  },
+  "devDependencies": { // 项目依赖
+      "grunt": "~0.4.1", // Grunt库
+      "grunt-contrib-jshint": "~0.6.0", //以下三个是Grunt内置任务
+      "grunt-contrib-nodeunit":s "~0.2.0",
+      "grunt-contrib-uglify": "~0.2.2"
+  }
+}
